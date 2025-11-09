@@ -16,3 +16,5 @@ Website for Vocalatte choir, served at [vocalatte.sk](https://vocalatte.sk).
 ## GitHub setup
 
 This was set up following GitHub Pages documentation: https://docs.github.com/en/pages/quickstart
+
+Redirecting the domain: https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages

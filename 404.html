@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+</body>
+<script>
+	function redirect(type, code) {
+		document.body.innerHTML = "Redirecting...";
+		window.location.replace("https://compbio.fmph.uniba.sk/vocalatte/" + type +"/" + code);
+	}
+
+	(function(){
+		var code = location.pathname.match("/zlatecasy/(.*)$"); 
+		if (code !== null) {
+			redirect("zlatecasy", code[1]);
+			return;
+		}
+
+		code = location.pathname.match("/vianocede/(.*)$");
+		if (code !== null) {
+			redirect("vianocede", code[1]);
+			return;
+		}
+		
+		document.body.innerHTML = "<h1>Error 404 - Page not found</h1>";
+	})();
+</script>
+</html>

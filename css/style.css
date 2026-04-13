@@ -227,7 +227,6 @@ body {
 	padding-bottom: 65px;
 	padding-top: 50px;
 	text-align: center;
-	min-height: 100%;
 }
 
 #slide-1 {
@@ -667,4 +666,9 @@ body {
 .navigation-slide {
 	cursor: pointer;
 }
+
+.summary-link:hover {
+	text-decoration: underline;
+}
+
 _:2015
